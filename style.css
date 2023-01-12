@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(/images/bg-desktop.svg);
+    height: 100vh;
+    padding: 4rem 5rem 4rem 5rem;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+header {
+    height: 10%;
+}
+
+header img {
+    height: 70%;
+}
+
+main {
+    display: flex;
+    gap: 4rem;
+    height: 81%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.4rem;
+}
+
+p {
+    font-size: large;
+}
+
+button {
+    height: 4rem;
+    width: 13rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: large;
+    color: hsl(257, 40%, 49%);
+}
+
+button:hover {
+    background-color: rgb(232, 130, 232);
+    cursor: pointer;
+    color: #fff;
+}
+
+footer {
+    height: 10%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 3rem;
+}
+
+.image {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #fff;
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: 9px 8px;
+    border-radius: 50%;
+}
+
+.image:hover {
+    border: 2px solid rgb(232, 130, 232);
+    cursor: pointer;
+}
+
+.one {
+    background-image: url(/images/facebook.png);
+}
+
+.one:hover {
+    background-image: url(/images/facebook\ hover.png);
+}
+
+.two {
+    background-image: url(/images/twitter.png);
+}
+
+.two:hover {
+    background-image: url(/images/twitter\ hover.png);
+}
+
+.three {
+    background-image: url(/images/instagram.png);
+}
+
+.three:hover {
+    background-image: url(/images/instagram\ hover.png);
+}
+
+
+@media screen and (max-width: 1240px) {
+    
+    .left {
+        width: 150%;
+    }
+
+    .left img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        height: fit-content;
+        gap: 3rem;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+}
